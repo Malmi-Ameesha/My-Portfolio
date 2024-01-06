@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Add the 'active' class to the clicked link
         link.classList.add("active");
   
-        // Scroll to the section corresponding to the clicked link
         var targetId = link.getAttribute("href").substring(1);
         var targetElement = document.getElementById(targetId);
   
@@ -27,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Auto Typed
 var typed = new Typed(".typed",{
-  strings : ["Undegrduate","Developer", "Designer", "Photographer"],
+  strings : ["Undegrduate","Web Developer","Mobile Developer","UI/UX Designer"],
   typeSpeed:150,
   backSpeed:150,
   loop:true
