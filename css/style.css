@@ -68,14 +68,14 @@ section {
 
 .transparent-navbar {
   background: transparent !important;
-  background-color: transparent;
+  background-color: var(--bg-color);
+  color: var(--white-color);
 }
 .transparent-navbar .navbar a{
-  color: var(--second-bg-color) !important;
+  color:#707e89  !important;
 }
-
-.transparent-navbar .bx{
-  color: var(--second-bg-color) !important;
+.transparent-navbar .logo{
+  color: #707e89 !important;
 }
 
 .header {
@@ -90,9 +90,6 @@ section {
   align-items: center;
   z-index: 100;
   /* background-color: transparent; */
-}
-.transparent-navbar .logo{
-  color: var(--second-bg-color) !important;
 }
 
 .logo {
