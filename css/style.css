@@ -26,7 +26,6 @@
 html{
   font-size:62.5%;
   overflow-x : hidden;
-  /* background:linear-gradient(315deg,#ffffff 0%,#d7e1ec 74%); */
 }
 
 body{
@@ -43,6 +42,7 @@ section {
   text-align: center;
   padding-bottom: 20px;
 }
+
 .section-title2 {
   text-align: center;
   padding-bottom: 20px;
@@ -66,8 +66,27 @@ section {
   color: var(--white-color);
 }
 
+/* Replace these class names with your actual class names */
+.transparent-section {
+  opacity: 0.7; /* Set your desired transparency level */
+  transition: opacity 0.3s ease; /* Add a transition for smooth effect */
+}
+
+.transparent-navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Set your desired navbar transparency */
+  transition: background-color 0.3s ease; /* Add a transition for smooth effect */
+}
+
+/* Add this class to sections that should not be transparent */
+.not-transparent {
+  opacity: 1 !important; /* Override opacity to make the section not transparent */
+  background-color: rgba(255, 255, 255, 1) !important; /* Override background color for navbar */
+}
+
+
 .transparent-navbar {
   background: transparent !important;
+  background-color: transparent;
 }
 .transparent-navbar .navbar a{
   color: var(--second-bg-color) !important;
@@ -105,7 +124,7 @@ section {
     padding: 0px;
 }
   
-  .navbar ul {
+.navbar ul {
     margin: 0;
     padding: 0;
     display: flex;

@@ -25,30 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var menuIcon = document.getElementById("menu-icon");
-//   var navbar = document.getElementById("navbar");
-
-//   menuIcon.addEventListener("click", function () {
-//       navbar.classList.toggle("active");
-
-//       //menu Icon
-//       var changePositionMenuIcon = document.querySelector(".bx");
-
-//       if (changePositionMenuIcon) {
-//         // Change the marginTop style
-//         if (changePositionMenuIcon.style.marginTop === "-250px") {
-//           changePositionMenuIcon.style.marginTop = "0px";
-//       } else {
-//           changePositionMenuIcon.style.marginTop = "-250px";
-//       }
-//     }
-      
-//   });
-//   // Other existing JavaScript code for header scroll and navbar active status...
-// })
-
 // Auto Typed
 var typed = new Typed(".typed",{
   strings : ["Undegrduate","Developer", "Designer", "Photographer"],
@@ -64,13 +40,13 @@ document.getElementById("resume-btn").addEventListener("click", function() {
   window.open(downloadLink, '_blank');
 });
 
+//Transparent navbar
 
-//transparent navbar
 document.addEventListener("DOMContentLoaded", function () {
   var navbar = document.querySelector(".header");
 
   window.addEventListener("scroll", function () {
-    if (window.scrollY > document.getElementById("about").offsetTop) {
+    if (window.scrollY > document.getElementById("resume",).offsetTop) {
       navbar.classList.add("transparent-navbar");
     } else {
       navbar.classList.remove("transparent-navbar");
@@ -108,7 +84,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   var formData = new FormData(form);
 
   // Formspree endpoint
-  var formAction = 'https://formspree.io/f/xrgwwegb';
+  var formAction = 'https://formspree.io/f/mrgngeda';
 
   fetch(formAction, {
       method: form.method,
