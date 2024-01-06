@@ -78,12 +78,11 @@ $(document).ready(function() {
 //contact section
 // Formspree Form  https://formspree.io/f/xrgwwegb
 document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent the default form submission behavior
+  e.preventDefault(); 
 
   var form = e.target;
   var formData = new FormData(form);
 
-  // Formspree endpoint
   var formAction = 'https://formspree.io/f/mrgngeda';
 
   fetch(formAction, {

@@ -553,6 +553,7 @@ div.gallery .item:hover img{
 
 .contact .info {
 width: 100%;
+padding-top: 80px;
 background:var(--bg-color);
 }
 
@@ -599,6 +600,7 @@ color: #fff;
 
 .contact .email-form {
 width: 98%;
+padding-top: 80px;
 background:var(--bg-color);
 }  
 
@@ -646,6 +648,17 @@ background:grey;
 color: var(--white-color);
 }
 
+#liveToast{
+  background-color: #C2D8EF;
+  border: 2px solid var(--second-bg-color);
+  color: black;
+  width: 400px;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  height: 100px;
+  font-size: large;
+}
 
 @keyframes animate-loading {
   0% {
