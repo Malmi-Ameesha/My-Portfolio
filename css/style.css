@@ -30,55 +30,13 @@ html{
 }
 
 body{
-  /* background: var(--white-color);
-  color: var(--text-color); */
   font-family: popins,"helvetica",sans-serif;
 }
 
- /* .container-section{
-  font-family: popins,"helvetica",sans-serif;
-  background-color: var(--bg-color);
-}  */
-
-/* .section-title {
-  text-align: center;
-  padding-bottom: 10px;
-  padding-top: 30px;
-} */
-
-/* .section-title #sec{
-  text-align: center;
-  padding-top: 30px;
-  color: var(--bg-color);
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 20px;
-} */
-
-/* #sec{
-  color: var(--bg-color);
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 20px;
-}
-
-#con{
-  color: var(--white-color);
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-top: 20px;
-} */
 section {
   padding: 80px 0;
   overflow: hidden;
   min-height: 100dvh;
-}
-
-.section-bg {
-  background-color: #f8fbfe;
 }
 
 .section-title1 {
@@ -330,13 +288,13 @@ section {
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #45505b;
+  color: var(--bg-color);
 }
 
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #7f00ff;
+  border-left: 2px solid var(--bg-color);
   position: relative;
 }
 
@@ -346,7 +304,7 @@ section {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #7f00ff;
+  color: var(--design-color);
   margin-bottom: 10px;
 }
 
@@ -376,15 +334,12 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #7f00ff;
+  border: 2px solid var(--bg-color);
 }
 
 /* Skill section */
 
 #skill{
-  /* width: 100%;
-  position: relative;
-  height: 100vh; */
   background: var(--bg-color);
 }
 
