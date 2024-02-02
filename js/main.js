@@ -35,7 +35,7 @@ var typed = new Typed(".typed",{
 // Download Button 
 document.getElementById("resume-btn").addEventListener("click", function() {
   // shareable link of CV file
-  var downloadLink = 'https://drive.google.com/file/d/1I4dnX6M-36PXkyRGePBcy5Qav5XPnrE6/view?usp=sharing';
+  var downloadLink = 'https://drive.google.com/file/d/1NHF661nOHiHDSa30EKBheBILjJOLFJbc/view?usp=sharing';
   window.open(downloadLink, '_blank');
 });
 
