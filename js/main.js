@@ -24,6 +24,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Mobile hamburger menu toggle
+document.addEventListener("DOMContentLoaded", function () {
+  var menuIcon = document.getElementById("menuIconContainer");
+  var navbar = document.getElementById("navbar");
+  if (menuIcon && navbar) {
+    menuIcon.addEventListener("click", function () {
+      navbar.classList.toggle("active");
+    });
+  }
+});
+
 // Auto Typed
 var typed = new Typed(".typed",{
   strings : ["Undegrduate","Web Developer","Mobile Developer","UI/UX Designer"],
@@ -53,17 +64,36 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Skills section: Technical / Soft toggle
+document.addEventListener("DOMContentLoaded", function () {
+  var skillButtons = document.querySelectorAll('#skill .button-group .button');
+  var panels = {
+    technical: document.querySelector('.technical-panel'),
+    soft: document.querySelector('.soft-panel')
+  };
+  skillButtons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      skillButtons.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      var target = btn.getAttribute('data-skill');
+      Object.keys(panels).forEach(function (key) {
+        if (panels[key]) panels[key].classList.toggle('active', key === target);
+      });
+    });
+  });
+});
+
 //project section
 
 $(document).ready(function() {
-  var $galleryContainer = $('.gallery').isotope({
+  var $galleryContainer = $('#Project.gallery').isotope({
     itemSelector: '.item',
     layoutMode: 'fitRows',
     filter: ':lt(0)' 
   });
 
-  $('.button-group .button').on('click', function() {
-    $('.button-group .button').removeClass('active');
+   $('#Project .button-group .button').on('click', function() {   
+    $('#Project .button-group .button').removeClass('active');  
     $(this).addClass('active');
 
     var value = $(this).attr('data-filter');
@@ -94,12 +124,9 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   .then(response => response.json())
   .then(data => {
       if (data.success) {
-          // Handle success with Bootstrap Toast
-          showToast('Error sending message. Please try again.', 'bg-danger');
-      } else {
-          // Handle error with Bootstrap Toast
-      
           showToast('Your message has been sent. Thank you!', 'bg-success');
+      } else {
+          showToast('Error sending message. Please try again.', 'bg-danger');
       }
   })
   .catch(error => {
