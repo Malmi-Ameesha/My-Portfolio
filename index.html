@@ -17,16 +17,23 @@
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+
 <!-- ======= Header Section ======= -->
 <header class="header">
     <a href="#" class="logo">Ameesha</a>
+
+    <div class="menu-icon-container" id="menuIconContainer">
+    <i class='bx bx-menu menu-icon-bx'></i>
+    </div>
 
     <nav id="navbar" class="navbar">
         <ul class="nav-list">
             <li><a href="#hero" class="nav-link active"><span>Home</span></a></li>
             <li><a href="#resume" class="nav-link"><span>My Resume</span></a></li>
+            <li><a href="#experience" class="nav-link"><span>Experience</span></a></li>
             <li><a href="#skill" class="nav-link"><span>Skills</span></a></li>
             <li><a href="#Project" class="nav-link"><span>Projects</span></a></li>
+            <li><a href="#volunteer" class="nav-link"><span>Volunteer Experience</span></a></li>
             <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
         </ul>
     </nav>
@@ -63,7 +70,7 @@
                 <h4>Malmee Ameesha</h4>
                 <ul>
                     <li><strong>Birthday: </strong>25 December 1999</li>
-                    <li><strong>Email: </strong>ameeshamalmee@gmail.com</li>
+                    <li><strong>Email: </strong>malmiameesha123@gmail.com</li>
                     <li><strong>Home Town: </strong>Matara</li>
                     <li><strong>Zip Code: </strong>81400</li>
                 </ul>
@@ -77,6 +84,17 @@
                     <li><strong>Responsive Web Design &nbsp;</strong>FreecodeCamp</li>
                     <li><strong>Python for Beginners &nbsp;</strong>University of Moratuwa</li>
                     <li><strong>Introduction to Cyber Security &nbsp;</strong>CISCO Networking Academy</li>
+                    <li><strong>Cybersecurity Essentials  &nbsp;</strong>CISCO Networking Academy</li>
+                    <li><strong>Python Data Structures  &nbsp;</strong>Sololearn</li>
+                    <li><strong>Artificial Intelligence Fundamentals &nbsp;</strong>Student Ambassador Program with IBM SkillsBuild</li>
+                    <li><strong>Understanding Agentic AI &nbsp;</strong>Agent Academy.ai</li>
+                    <li><strong>Codeless Path &nbsp;</strong>Test Automation University</li>
+                    <li><strong>Python basic and sample Django project for beginners  &nbsp;</strong>Udemy</li>
+                    <li><strong>Python And Django Framework For Beginners Complete Course   &nbsp;</strong>Udemy</li>
+                    <li><strong>Design Thinking for Innovation  &nbsp;</strong>Coursera</li>
+                    <li><strong>Python for Beginners &nbsp;</strong>Sololearn</li>
+                    <li><strong>Python Data Structures  &nbsp;</strong>Sololearn</li>
+                    <li><strong>Grapic Design  &nbsp;</strong>SLTCA Institute Information and communication Technology </li>
                 </ul>
             </div>
         </div>
@@ -84,10 +102,13 @@
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
                 <h4>Bachelor of Software Engineering (Hons.)</h4> 
-                <p><em>Open University, Sri Lanka | 2021/2022 - Present </em></p>
+                <p><em>Open University, Sri Lanka | 21/22 - Present </em></p>
                 <ul>
                 <li><strong>Subjects</strong></li>
-                <li><div style="font-size: 12px;">Software Engineering Concepts, Data Structures and Algorithms, Web Application Development,Mobile Application Development, Requirement Engineering, Web Technology, User Experience Engineering, Object Oriented Design, Data Modelling and Database Systems, Mathematics for Computing, Applied Statistics</div></li>
+                <li><div style="font-size: 12px;">Software Engineering Concepts, Data Structures and Algorithms, Web Application Development,Mobile Application Development, Requirement Engineering, Web Technology, User Experience Engineering, Object Oriented Design, Data Modelling and Database Systems, Mathematics for Computing, Applied Statistics,Web Technology, Accounting 
+for Engineers ,Discrete Mathematics,Operating Systems,Software Project Management,Software Software,Performance Modelling 
+                    
+                </div></li>
                 </ul>
             </div>
             <div class="resume-item">
@@ -112,166 +133,290 @@
 
 <!-- ======= End of resume Section ======= -->
 
+<!-- ======= Experience Section ======= -->
+<section id="experience" class="experience">
+    <div class="container">
+        <div class="section-title1">
+            <h2>Experience</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="experience-item">
+                    <span class="experience-date">2024 - Present</span>
+                    <h4>Freelance Web Developer</h4>
+                    <p><em>Self-employed / Remote</em></p>
+                    <ul>
+                        <li>Built and deployed responsive websites for small businesses using HTML, CSS, JavaScript, and Django.</li>
+                        <li>Collaborated with clients to translate requirements into functional, mobile-friendly designs.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <span class="experience-date">2023 - 2024</span>
+                    <h4>Software Engineering Intern</h4>
+                    <p><em>Company Name, Location</em></p>
+                    <ul>
+                        <li>Assisted in developing and testing features for a Spring Boot based web application.</li>
+                        <li>Worked with the team on bug fixes, code reviews, and version control using Git.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <span class="experience-date">2022 - 2023</span>
+                    <h4>UI/UX Design Volunteer</h4>
+                    <p><em>Student Project Team</em></p>
+                    <ul>
+                        <li>Designed wireframes and prototypes in Figma for a mobile application used by fellow students.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======= End of Experience Section ======= -->
+
 <!-- ======= Skill Section ======= -->
 
 <section id ="skill" class="d-flex flex-column justify-content-center">
     <div class="container-section">
-        <div class="section-title2" style="margin-bottom: 30px;">
+        <div class="section-title2" style="margin-bottom: 10px;">
             <h2>Skills</h2>
         </div>
+
+        <div class="button-group">
+            <button id="technical-btn" class="button active" data-skill="technical">Technical Skills</button>
+            <button id="soft-btn" class="button" data-skill="soft">Soft Skills</button>
+        </div>
+
+        <div class="skill-panel technical-panel active">
+            <div class="skill-category">
+
+            <div class="skill-box">
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/html-1.svg" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">HTML</div>
+                            <div class="percent">90%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/css-3.svg" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">CSS</div>
+                            <div class="percent">80%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/bootstrap-4.svg" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">Bootstrap</div>
+                            <div class="percent">70%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/javascript-1.svg" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">Javascript</div>
+                            <div class="percent">50%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/angular-icon-1.svg" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">Angular</div>
+                            <div class="percent">60%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
         
-       <div class="skill-category">
+            <div class="skill-box">
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/java.webp" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">java</div>
+                            <div class="percent">60%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/python-svgrepo-com.svg" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">Python</div>
+                            <div class="percent">20%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 20%"></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/mysql-logo.svg" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">MySql</div>
+                            <div class="percent">70%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
 
-          <div class="skill-box">
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/html-1.svg" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">HTML</div>
-                          <div class="percent">90%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 80%"></div>
-                      </div>
-                  </div>
-              </div>
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/postgre.png" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">postgre SQL</div>
+                            <div class="percent">60%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
 
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/css-3.svg" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">CSS</div>
-                          <div class="percent">80%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 90%"></div>
-                      </div>
-                  </div>
-              </div>
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/git-svgrepo-com.svg" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">Git</div>
+                            <div class="percent">80%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 95%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/bootstrap-4.svg" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">Bootstrap</div>
-                          <div class="percent">70%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 60%"></div>
-                      </div>
-                  </div>
-              </div>
+            <div class="skill-box">
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/react.jpg" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">React Native</div>
+                            <div class="percent">70%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
 
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/javascript-1.svg" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">Javascript</div>
-                          <div class="percent">50%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 50%"></div>
-                      </div>
-                  </div>
-              </div>
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/spring.png" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">Spring Boot</div>
+                            <div class="percent">70%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
 
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/angular-icon-1.svg" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">Angular</div>
-                          <div class="percent">10%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 60%"></div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      
-          <div class="skill-box">
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/java.webp" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">java</div>
-                          <div class="percent">60%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 70%"></div>
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/python-svgrepo-com.svg" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">Python</div>
-                          <div class="percent">20%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 20%"></div>
-                      </div>
-                  </div>
-              </div>
-  
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/mysql-logo.svg" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">MySql</div>
-                          <div class="percent">70%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 60%"></div>
-                      </div>
-                  </div>
-              </div>
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/react.jpg" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">React</div>
+                            <div class="percent">60%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
 
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/postgre.png" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">postgre SQL</div>
-                          <div class="percent">50%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 60%"></div>
-                      </div>
-                  </div>
-              </div>
+                <div class="skill">
+                    <img class="icon" src="./skills_icon/laravel.png" alt="HTML Icon">
+                    <div class="progress-bar-container">
+                        <div class="text-container">
+                            <div class="title">Laravel</div>
+                            <div class="percent">60%</div>
+                        </div>
+                        <div class="progress-bar-wrapper">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>  
 
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/git-svgrepo-com.svg" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">Git</div>
-                          <div class="percent">80%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 95%"></div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-          <div class="skill-box">
-              <div class="skill">
-                  <img class="icon" src="./skills_icon/react.jpg" alt="HTML Icon">
-                  <div class="progress-bar-container">
-                      <div class="text-container">
-                          <div class="title">React Native</div>
-                          <div class="percent">70%</div>
-                      </div>
-                      <div class="progress-bar-wrapper">
-                          <div class="progress-bar" style="width: 70%"></div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-
-       </div>
+       <div class="skill-panel soft-panel">
+            <div class="soft-skill-grid">
+                <div class="soft-skill-card">
+                    <i class='bx bx-group'></i>
+                    <h4>Teamwork</h4>
+                    <p>Collaborates smoothly across cross-functional teams.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <i class='bx bx-bulb'></i>
+                    <h4>Problem Solving</h4>
+                    <p>Breaks down complex issues into practical solutions.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <i class='bx bx-time-five'></i>
+                    <h4>Time Management</h4>
+                    <p>Plans tasks to consistently meet deadlines.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <i class='bx bx-chat'></i>
+                    <h4>Communication</h4>
+                    <p>Explains ideas clearly to technical and non-technical audiences.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <i class='bx bx-trending-up'></i>
+                    <h4>Adaptability</h4>
+                    <p>Adjusts quickly to new tools and shifting priorities.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <i class='bx bx-crown'></i>
+                    <h4>Leadership</h4>
+                    <p>Takes ownership and supports teammates to reach goals.</p>
+                </div>
+            </div>
+        </div>
       </div>
 
       </div> 
@@ -293,6 +438,8 @@
                   <button id="web" class="button active" data-filter=".web">Web</button>
                   <button id="mobile" class="button" data-filter=".mobile">Mobile</button>
                   <button id="ui" class="button" data-filter=".ui">UI/UX</button>
+                  <button id="design" class="button" data-filter=".design">Graphic Design</button>
+                  <button id="video" class="button" data-filter=".video">Video Editing</button>
               </div>
 
               <div class="gallery">
@@ -368,6 +515,14 @@
    </section>
 
   <!-- ======= End of project Section ======= -->
+
+  <!-- ======= End of Volunteer Section ======= -->
+   <section id="volunteer" class="Volunteer">
+    <div class="container">
+
+    </div>  
+    </section>
+<!-- ======= End of Volunteer Section ======= -->
 
  <!-- ======= contact Section ======= -->
  <section id="contact" class="contact">
