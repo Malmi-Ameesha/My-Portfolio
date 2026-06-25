@@ -583,6 +583,7 @@ div.gallery .item{
   position: relative;
   margin: 4px;
   width: calc(33.33% - 8px);
+  aspect-ratio: 4 / 3;
   overflow: hidden;
   cursor: pointer;
 }
