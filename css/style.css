@@ -613,6 +613,18 @@ div.gallery .item:hover img{
   opacity: 0;
 }
 
+.item.video {
+    overflow: hidden;
+    position: relative;
+}
+
+.item.video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transform: scale(1.1);
+}
+
 .item:hover .overlay{
   opacity: 1;
 }
@@ -649,43 +661,78 @@ div.gallery .item:hover img{
   }
 }
 
-/* ===== Volunteer gallery ===== */
-.volunteer { background-color: var(--second-bg-color); }
+/* ===== Volunteer Gallery ===== */
+.volunteer {
+  background: var(--second-bg-color);
+}
 
 .volunteer-gallery {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px;
-  max-width: 1100px; margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
 }
-.volunteer-card { 
-  background: var(--bg-color); 
-  border-radius: 12px; 
-  overflow: hidden; 
-  transition: transform 0.3s ease;
-}
-.volunteer-card:hover { transform: translateY(-6px); }
-.volunteer-img { position: relative; width: 100%; aspect-ratio: 5/4; overflow: hidden; }
-.volunteer-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
-.volunteer-card:hover .volunteer-img img { transform: scale(1.08); }
-.volunteer-overlay {
-  position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-  background: rgba(8,27,41,0.45); opacity: 0; transition: opacity 0.3s ease;
-}
-.volunteer-card:hover .volunteer-overlay { opacity: 1; }
-.volunteer-overlay i { font-size: 3rem; color: var(--white-color); }
-.volunteer-info { padding: 10px 20px 20px; }
-/* .volunteer-info h4 { color: var(--white-color); font-size: 1.7rem; margin-bottom: 6px; } */
-.volunteer-org { display: block; color: var(--design-color); font-size: 1.2rem; font-weight: 600; margin-bottom: 10px; }
-.volunteer-info p { color: #9fb2c0; font-size: 1.3rem; line-height: 1.5; }
 
-@media (max-width: 768px) { .volunteer-gallery { grid-template-columns: 1fr; } }
+.volunteer-gallery .item {
+  position: relative;
+  width: calc(20% - 8px); /* 5 images per row */
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-/* ===== Small responsive fixes ===== */
+.volunteer-gallery .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.volunteer-gallery .item:hover img {
+  transform: scale(1.1);
+}
+
+.volunteer-gallery .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(8, 27, 41, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.volunteer-gallery .item:hover .overlay {
+  opacity: 1;
+}
+
+.volunteer-gallery .overlay i {
+  font-size: 3rem;
+  color: white;
+}
+
+/* Tablet - 3 images */
+@media (max-width: 992px) {
+  .volunteer-gallery .item {
+    width: calc(33.33% - 8px);
+  }
+}
+
+/* Mobile - 2 images */
+@media (max-width: 768px) {
+  .volunteer-gallery .item {
+    width: calc(50% - 8px);
+  }
+}
+
+/* Small Mobile - 1 image */
 @media (max-width: 576px) {
-  #hero h1 { font-size: 4.2rem; }
-  #hero p { font-size: 1.8rem; }
+  .volunteer-gallery .item {
+    width: 100%;
+  }
 }
-.skill-box { flex: 1 1 280px; max-width: 360px; }
-@media (max-width: 576px) { .skill-box { flex: 1 1 100%; max-width: 100%; } }
 
 /* Contact Section */
 
