@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var resumeBtn = document.getElementById("resume-btn");
   if (resumeBtn) {
     resumeBtn.addEventListener("click", function () {
-      var downloadLink = 'https://drive.google.com/file/d/1NHF661nOHiHDSa30EKBheBILjJOLFJbc/view?usp=sharing';
+      var downloadLink = 'https://drive.google.com/drive/folders/11zDg8WMRWWWeQUNd0xdeAcdkob-bsfQU?usp=sharing';
       window.open(downloadLink, '_blank');
     });
   }
